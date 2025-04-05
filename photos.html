@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Wedding Album</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff8f0;
+      color: #333;
+    }
+
+    header {
+      background: #ffe4e1;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #b22222;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .photo-box {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background: #eee;
+    }
+
+    .photo-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .photo-box:hover img {
+      transform: scale(1.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #ffe4e1;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our  Moments Together 📸</h1>
+    <p>Here are some beautiful memories we’d love to share with you</p>
+  </header>
+
+  <section class="gallery">
+    <div class="photo-box"><img src="1.jfif" alt="Wedding Photo 1" /></div>
+    <div class="photo-box"><img src="2.jfif" alt="Wedding Photo 2" /></div>
+    <div class="photo-box"><img src="3.jfif" alt="Wedding Photo 3" /></div>
+    <div class="photo-box"><img src="4.jfif" alt="Wedding Photo 4" /></div>
+    <div class="photo-box"><img src="5.jfif" alt="Wedding Photo 5" /></div>
+    <div class="photo-box"><img src="6.jfif" alt="Wedding Photo 6" /></div>
+    <div class="photo-box"><img src="7.jfif" alt="Wedding Photo 7" /></div>
+    <div class="photo-box"><img src="8.jfif" alt="Wedding Photo 8" /></div>
+  </section>
+
+  <footer>
+    <p>With love, Aarav & Meera ❤️</p>
+  </footer>
+</body>
+</html>
