@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Send Your Wish</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -34,12 +38,14 @@
 
     input, textarea {
       width: 100%;
+      max-width: 100%;
       padding: 0.75rem;
-      margin-bottom: 1rem;
+      margin: 0 auto 1rem auto;
       border: 1px solid #ccc;
       border-radius: 8px;
       font-size: 1rem;
       font-family: inherit;
+      display: block;
     }
 
     button {
