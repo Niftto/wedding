@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>You're Invited</title>
+  <style>
+    body {
+      margin: 0;
+      background: #fff8f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+    }
+
+    .overlay h1 {
+      font-size: 2rem;
+      color: #b22222;
+      animation: fadeInOut 1s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInOut {
+      0% { opacity: 0; }
+      20% { opacity: 1; }
+      80% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+  </style>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = 'main.html';
+    }, 1000);
+  </script>
+</head>
+<body>
+  <div class="overlay">
+    <h1>You are invited to our wedding</h1>
+  </div>
+</body>
+</html>
